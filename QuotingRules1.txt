@@ -1,0 +1,26 @@
+
+
+####Single and Double-Quoted Strings####
+$i = 5
+"The value of $i is $i."
+output
+The value of 5 is 5.
+
+$i = 5
+'The value of $i is $i.'
+Output
+The value $i is $i.
+## This is the difference between single quoted
+## and double quoted strings, double quoted strings will
+## interpret the value in the variable if preceded
+## by a $, and display that, single quoted string will
+## display the string literally.  
+
+## To prevent the substitution of a variable value in 
+## in a double-quoted string, use the backtick character 
+(`) which is the Powershell escape character.  
+
+## $i = 5
+## "The value of `$i is $i."
+output
+The value $i is 5.
